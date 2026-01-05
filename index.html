@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charan Prajwal | DevOps Engineer</title>
+    <meta name="description" content="Portfolio of Charan Prajwal, a DevOps Engineer specializing in Kubernetes, AWS, and GitOps.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        bg: '#0f172a', /* Slate 900 */
+                        card: '#1e293b', /* Slate 800 */
+                        primary: '#38bdf8', /* Sky 400 */
+                        secondary: '#94a3b8', /* Slate 400 */
+                        aws: '#FF9900',
+                        azure: '#007FFF'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0f172a; color: #e2e8f0; }
+        .tech-pill {
+            @apply px-3 py-1 text-sm font-mono border border-slate-700 rounded-md text-primary bg-slate-900/50;
+        }
+        /* Hover effect for clickable list items */
+        .hover-link:hover {
+            @apply text-primary transition-colors duration-200 cursor-pointer;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed w-full z-50 bg-bg/90 backdrop-blur-sm border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-mono text-xl font-bold text-primary">&lt;CP /&gt;</a>
+            <div class="hidden md:flex space-x-8 text-sm font-mono text-secondary">
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#skills" class="hover:text-white transition">Stack</a>
+                <a href="#projects" class="hover:text-white transition">Projects</a>
+                <a href="#experience" class="hover:text-white transition">Experience</a>
+            </div>
+            <a href="https://drive.google.com/file/d/1xV9Yi9Qm8EYaZ4pyoBqhgLF9-VSG8lS-/view" target="_blank" class="px-4 py-2 text-sm font-mono font-bold text-bg bg-primary rounded hover:bg-sky-300 transition">
+                Resume <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+            </a>
+        </div>
+    </nav>
+
+    <section id="about" class="min-h-screen flex flex-col justify-center items-start max-w-5xl mx-auto px-6 pt-16">
+        <p class="font-mono text-primary mb-4">Hi, my name is</p>
+        <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tight">Charan Prajwal.</h1>
+        <h2 class="text-4xl md:text-6xl font-bold text-secondary mb-8">I automate cloud infrastructure.</h2>
+        <p class="max-w-xl text-lg text-slate-400 mb-10 leading-relaxed">
+            DevOps Engineer III with 2.5+ years of experience. I build resilient Kubernetes clusters, architect GitOps workflows, and optimize cloud costs. Recognized for reducing deployment times by 40%.
+        </p>
+        
+        <div class="flex flex-wrap gap-4">
+            <a href="#projects" class="px-6 py-3 border border-primary text-primary font-mono rounded hover:bg-primary/10 transition">
+                Check my work
+            </a>
+            <a href="https://github.com/CHARANPRAJWAL" target="_blank" class="px-6 py-3 text-slate-300 hover:text-white transition" title="GitHub">
+                <i class="fa-brands fa-github text-xl"></i>
+            </a>
+            <a href="https://linkedin.com/in/charan-prajwal001" target="_blank" class="px-6 py-3 text-slate-300 hover:text-white transition" title="LinkedIn">
+                <i class="fa-brands fa-linkedin text-xl"></i>
+            </a>
+            <a href="https://medium.com/@charanprajwal" target="_blank" class="px-6 py-3 text-slate-300 hover:text-white transition" title="Medium">
+                <i class="fa-brands fa-medium text-xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 max-w-5xl mx-auto px-6">
+        <div class="flex items-center mb-10">
+            <h2 class="text-2xl font-bold text-white font-mono"><span class="text-primary">01.</span> Technical Stack</h2>
+            <div class="h-px bg-slate-700 flex-grow ml-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-card p-6 rounded-lg border border-slate-700 hover:border-primary transition duration-300">
+                <i class="fa-brands fa-aws text-3xl text-primary mb-4"></i>
+                <h3 class="text-lg font-bold text-white mb-2">Cloud & OS</h3>
+                <p class="text-sm text-secondary font-mono">AWS, Azure, DigitalOcean, Linux Administration</p>
+            </div>
+            <div class="bg-card p-6 rounded-lg border border-slate-700 hover:border-primary transition duration-300">
+                <i class="fa-solid fa-cubes text-3xl text-primary mb-4"></i>
+                <h3 class="text-lg font-bold text-white mb-2">Containerization</h3>
+                <p class="text-sm text-secondary font-mono">Docker, Kubernetes, Helm, ArgoCD</p>
+            </div>
+            <div class="bg-card p-6 rounded-lg border border-slate-700 hover:border-primary transition duration-300">
+                <i class="fa-solid fa-code text-3xl text-primary mb-4"></i>
+                <h3 class="text-lg font-bold text-white mb-2">IaC & Scripting</h3>
+                <p class="text-sm text-secondary font-mono">Terraform, Ansible, Python, Bash, HCL</p>
+            </div>
+            <div class="bg-card p-6 rounded-lg border border-slate-700 hover:border-primary transition duration-300">
+                <i class="fa-solid fa-chart-line text-3xl text-primary mb-4"></i>
+                <h3 class="text-lg font-bold text-white mb-2">Observability</h3>
+                <p class="text-sm text-secondary font-mono">Prometheus, Grafana, Loki, Tempo, OpenTelemetry</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 max-w-5xl mx-auto px-6">
+        <div class="flex items-center mb-10">
+            <h2 class="text-2xl font-bold text-white font-mono"><span class="text-primary">02.</span> Experience</h2>
+            <div class="h-px bg-slate-700 flex-grow ml-4"></div>
+        </div>
+
+        <div class="relative border-l border-slate-700 ml-3 md:ml-6 space-y-12">
+            <div class="ml-8 relative">
+                <span class="absolute -left-10 md:-left-[53px] top-1 h-4 w-4 rounded-full bg-primary border-4 border-bg"></span>
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
+                    <h3 class="text-xl font-bold text-white">DevOps Engineer III</h3>
+                    <span class="text-sm font-mono text-primary">Jul 2023 -- Present</span>
+                </div>
+                <h4 class="text-lg text-secondary mb-4">GeekyAnts India | Bengaluru</h4>
+                <ul class="list-disc list-outside text-slate-400 space-y-2 ml-4 text-sm leading-relaxed">
+                    <li>Led end-to-end DevOps delivery; architected GitOps-based CI/CD using <strong>GitHub Actions and ArgoCD</strong>.</li>
+                    <li>Reduced deployment time by <strong>40%</strong> and enabled 50+ automated releases monthly with zero downtime.</li>
+                    <li>Built observability platform with Prometheus, Grafana, Loki, Tempo, and <strong>OpenTelemetry</strong> (reduced MTTR by 35%).</li>
+                    <li>Created reusable IaC templates (Terraform/Ansible) reducing AWS provisioning time by 50% and saving <strong>$15K annually</strong>.</li>
+                    <li><strong>Awarded:</strong> Problem-Solver Award (Oct 2025) for exceptional delivery quality and rebuilding client trust.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 max-w-5xl mx-auto px-6">
+        <div class="flex items-center mb-10">
+            <h2 class="text-2xl font-bold text-white font-mono"><span class="text-primary">03.</span> Featured Projects</h2>
+            <div class="h-px bg-slate-700 flex-grow ml-4"></div>
+        </div>
+
+        <div class="grid gap-8">
+            <div class="bg-card p-6 rounded-lg border border-slate-700">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold text-white hover:text-primary transition">
+                        <a href="https://github.com/CHARANPRAJWAL/iac-drift-detection" target="_blank">AWS Drift Detection Dashboard</a>
+                    </h3>
+                    <div class="flex gap-4">
+                        <a href="https://github.com/CHARANPRAJWAL/iac-drift-detection" target="_blank" class="text-slate-400 hover:text-primary"><i class="fa-brands fa-github text-xl"></i></a>
+                    </div>
+                </div>
+                <p class="text-slate-400 mb-4 text-sm">
+                    A production-ready PERN stack (PostgreSQL, Express, React, Node.js) application that compares actual AWS infrastructure state against Infrastructure as Code (IaC) definitions to detect configuration drift.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-pill">React/Node.js</span>
+                    <span class="tech-pill">AWS SDK</span>
+                    <span class="tech-pill">Terraform</span>
+                    <span class="tech-pill">PostgreSQL</span>
+                </div>
+            </div>
+
+            <div class="bg-card p-6 rounded-lg border border-slate-700">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold text-white hover:text-primary transition">
+                        <a href="https://github.com/CHARANPRAJWAL/otel-observability-stack" target="_blank">Cloud-Native Observability Platform</a>
+                    </h3>
+                    <div class="flex gap-4">
+                        <a href="https://github.com/CHARANPRAJWAL/otel-observability-stack" target="_blank" class="text-slate-400 hover:text-primary"><i class="fa-brands fa-github text-xl"></i></a>
+                    </div>
+                </div>
+                <p class="text-slate-400 mb-4 text-sm">
+                    Full-stack observability solution with distributed tracing, metrics, and log aggregation using OpenTelemetry instrumentation.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-pill">OpenTelemetry</span>
+                    <span class="tech-pill">Grafana/Loki</span>
+                    <span class="tech-pill">Docker</span>
+                </div>
+            </div>
+
+            <div class="bg-card p-6 rounded-lg border border-slate-700">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold text-white hover:text-primary transition">
+                        <a href="https://github.com/CHARANPRAJWAL/example-voting-app-argocd-k8s" target="_blank">Production-Grade GitOps Pipeline</a>
+                    </h3>
+                    <div class="flex gap-4">
+                        <a href="https://github.com/CHARANPRAJWAL/example-voting-app-argocd-k8s" target="_blank" class="text-slate-400 hover:text-primary"><i class="fa-brands fa-github text-xl"></i></a>
+                    </div>
+                </div>
+                <p class="text-slate-400 mb-4 text-sm">
+                    End-to-end GitOps workflow implementing ArgoCD App-of-Apps pattern for multi-environment deployments with automated rollback.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-pill">Kubernetes</span>
+                    <span class="tech-pill">ArgoCD</span>
+                    <span class="tech-pill">Helm</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 max-w-5xl mx-auto px-6">
+        <div class="flex items-center mb-6">
+            <h2 class="text-2xl font-bold text-white font-mono"><span class="text-primary">04.</span> Content Creation</h2>
+            <div class="h-px bg-slate-700 flex-grow ml-4"></div>
+        </div>
+        <div class="bg-card p-6 rounded-lg border border-slate-700">
+            <p class="text-slate-400 text-sm mb-4">I share knowledge on Kubernetes and GitOps through various channels.</p>
+            <ul class="space-y-4">
+                <li class="group">
+                    <a href="https://www.youtube.com/@GeekyAnts" target="_blank" class="flex items-start text-sm text-slate-300 hover-link">
+                        <i class="fa-brands fa-youtube text-red-500 mt-1 mr-3 text-xl group-hover:scale-110 transition-transform"></i>
+                        <span><strong>GeekyAnts Official:</strong> Getting Started with ArgoCD & Advanced GitOps Strategies. <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1 opacity-0 group-hover:opacity-100 transition-opacity"></i></span>
+                    </a>
+                </li>
+                <li class="group">
+                    <a href="https://medium.com/@charanprajwal" target="_blank" class="flex items-start text-sm text-slate-300 hover-link">
+                        <i class="fa-brands fa-medium text-white mt-1 mr-3 text-xl group-hover:scale-110 transition-transform"></i>
+                        <span>Published articles on K8s best practices, CI/CD automation, and DevOps workflows. <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1 opacity-0 group-hover:opacity-100 transition-opacity"></i></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="py-10 max-w-5xl mx-auto px-6">
+        <div class="flex items-center mb-6">
+            <h2 class="text-2xl font-bold text-white font-mono"><span class="text-primary">05.</span> Certifications</h2>
+            <div class="h-px bg-slate-700 flex-grow ml-4"></div>
+        </div>
+        <div class="bg-card p-6 rounded-lg border border-slate-700">
+            <ul class="space-y-6">
+                <li class="group">
+                    <a href="https://www.credly.com/badges/78d0423e-f237-4fc9-ba91-b6bef21cdb1e/" target="_blank" class="flex items-center text-sm text-slate-300 hover-link">
+                        <i class="fa-brands fa-aws text-aws text-2xl mr-4 group-hover:scale-110 transition-transform"></i>
+                        <div>
+                            <span class="font-bold block text-white text-base">AWS Certified Developer – Associate</span>
+                            <span class="text-secondary text-xs">Issued Nov 2025</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                    </a>
+                </li>
+                <li class="group">
+                    <a href="https://learn.microsoft.com/en-gb/users/charanprajwal-8277/credentials/7a0af9054372f19f" target="_blank" class="flex items-center text-sm text-slate-300 hover-link">
+                        <i class="fa-brands fa-microsoft text-azure text-2xl mr-4 group-hover:scale-110 transition-transform"></i>
+                         <div>
+                            <span class="font-bold block text-white text-base">Microsoft Certified: Azure Fundamentals (AZ-900)</span>
+                            <span class="text-secondary text-xs">Issued Jan 2025</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                    </a>
+                </li>
+                <li class="flex items-center text-sm text-slate-300 opacity-70 cursor-default">
+                    <i class="fa-solid fa-spinner text-secondary text-xl mr-5 animate-spin-slow"></i>
+                    <div>
+                        <span class="font-bold block text-slate-300 text-base">Certified Kubernetes Administrator (CKA)</span>
+                        <span class="text-secondary text-xs">In Progress (Expected Jan 2026)</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+     <section class="py-10 max-w-5xl mx-auto px-6">
+        <div class="flex items-center mb-6">
+            <h2 class="text-2xl font-bold text-white font-mono"><span class="text-primary">06.</span> Education</h2>
+            <div class="h-px bg-slate-700 flex-grow ml-4"></div>
+        </div>
+        <div class="bg-card p-6 rounded-lg border border-slate-700">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
+                <div>
+                    <h3 class="text-lg font-bold text-white">Bachelor of Engineering in Computer Science</h3>
+                    <p class="text-secondary font-mono text-sm mt-1">MVJ College of Engineering, Bengaluru</p>
+                </div>
+                <div class="mt-2 sm:mt-0 text-right">
+                    <span class="block text-primary font-mono text-sm">Graduated Jul 2023</span>
+                    <span class="block text-slate-500 text-xs mt-1">GPA: 8.0/10.0</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-bg border-t border-slate-800 py-12 text-center mt-10">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-6">Get In Touch</h2>
+            <p class="text-slate-400 mb-6 max-w-lg mx-auto">
+                Currently open to new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            </p>
+            
+            <p class="font-mono text-primary mb-8 text-lg">charanprajwal001@gmail.com</p>
+
+            <a href="mailto:charanprajwal001@gmail.com" class="px-8 py-4 bg-primary/10 border border-primary text-primary font-mono rounded hover:bg-primary hover:text-bg font-bold transition duration-300">
+                Say Hello
+            </a>
+            
+            <div class="mt-16 text-sm text-slate-600 font-mono">
+                <p>&copy; 2026 Charan Prajwal. Built with HTML & Tailwind.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
